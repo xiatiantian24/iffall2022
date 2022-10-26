@@ -1,0 +1,282 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 1px;
+    width: 70vw;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #C2861A;
+    margin: 12px 0 6px 0;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 8px 0 8px 0;
+}
+
+
+.discription {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+header {
+    background-image: url(https://static01.nyt.com/images/2017/04/27/dining/27COOKING-CHICKENTAGINE1/27COOKING-CHICKENTAGINE1-threeByTwoMediumAt2X-v2.jpg);
+    background-color: rgba(0, 0, 0, 0.387);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+}
+
+.header-wrap {
+    margin: 0 24px;
+    padding: 60px 0 40px 0;
+}
+
+i {
+    margin-right: 6px;
+}
+
+header a {
+    color: white;
+}
+
+section {
+    margin: 20px 24px;
+}
+
+.buttons {
+    margin: 20px 40px 0 40px;
+
+}
+
+button {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.primary {
+    color: white;
+    background-color: #C2861A;
+}
+
+.secondary {
+    color: #C2861A;
+    border: 1px solid #C2861A;
+    background-color: white;
+}
+
+.serving {
+    display: inline-flex;
+    width: fit-content;
+    padding: 8px 4px;
+    color: #C2861A;
+    border: 1px solid #C2861A;
+    background-color: white;
+    margin: 0 -2px;
+}
+
+.serving:focus {
+    color: white;
+    background-color: #C2861A;
+    width: 50px;
+    /* text-align: center; How to center button text*/
+}
+
+.servings {
+    text-align: center;
+    margin: 8px 0 16px 0;
+}
+
+ul {
+    margin: 0 24px;
+    padding-left: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+.notes,
+.nutrition {
+    border: 5px double #c2871a51;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.nutrition {
+    margin: 40px 24px;
+}
+
+.notes h2,
+.nutrition h2 {
+    margin-top: -20px;
+    background-color: white;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+footer {
+    background-color: #C2861A;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 6px 0;
+}
+
+.footer-wrap {
+    color: white;
+    margin: 0 24px;
+    padding: 10px 0;
+}
+
+.instructions {
+    margin: 0;
+}
+
+.instructions p {
+    margin-top: 8px;
+}
+
+.instructions h2,
+.instructions h3 {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.text-wrap {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 48px;
+        max-width: 700px;
+        margin-left: 150px;
+
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .discription {
+        font-size: 16px;
+        margin-left: 150px;
+        max-width: 700px;
+    }
+
+    .overview {
+        width: 180px;
+        margin: auto;
+    }
+
+    header {
+        background-size: cover;
+        padding-top: 80px;
+    }
+
+    .header-wrap {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    button {
+        width: 100px;
+        margin-right: 20px;
+    }
+
+    .buttons {
+        width: fit-content;
+        margin: auto;
+        margin-top: 24px;
+
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+        margin: auto;
+        padding: 24px 0;
+    }
+
+    .left {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .instructions {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .step-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        margin: 0 24px;
+    }
+
+    .step {
+        position: relative;
+        height: 450px;
+        margin-bottom: 24px;
+        border: 5px double #c2871a51;
+        border-radius: 8px;
+    }
+
+    .step img {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .footer-wrap {
+        max-width: 1100px;
+        margin: auto;
+        padding-bottom: 48px;
+    }
+}
