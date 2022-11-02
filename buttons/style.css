@@ -44,7 +44,7 @@
 #btn_coca-cola {
     display: inline-block;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 80px;
     padding-top: 40px;
     width: 100px;
     height: 60px;
@@ -80,7 +80,7 @@
 }
 
 #btn_nerf {
-    display:inline-block;
+    display: inline-block;
     margin-top: 100px;
     color: #fe5000;
     font-weight: 700;
@@ -97,7 +97,7 @@
 }
 
 #btn_harley {
-    display:inline-block;
+    display: inline-block;
     margin-top: 100px;
     color: #fa6600;
     padding: 0.5em 1em;
@@ -114,3 +114,88 @@
     box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
 }
 
+#btn_ideo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 100px;
+    padding: 1em 1.2em;
+    border: 2pt solid #000000;
+    text-decoration: none;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #000000;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+#btn_ideo:hover {
+    border: 2pt solid #68C8C6;
+}
+
+#btn_ideo::before {
+    content: "O";
+    font-weight: 500;
+    font-size: 80px;
+    color: #68C8C6;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transform: scaleY(0);
+
+}
+
+#btn_ideo:hover::before {
+    transform: scaley(1);
+}
+
+#btn_pastaria {
+    display: inline-block;
+    margin: auto;
+    margin-top: 80px;
+    padding-top: 20px;
+    width: 100px;
+    height: 80px;
+    color: #f04924;
+    background-color: #8fa8a8;
+    border-radius: 1000px;
+    text-decoration: none;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+
+
+#btn_pastaria:hover {
+    color: #ffffff;
+    background-color: #064047;
+    box-shadow: rgba(3, 44, 47, 0.2) 0px 18px 50px -10px;
+}
+
+
+#btn_facebook i {
+    color: #3B5998;
+    background-color: #ffffff;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 20px;
+    vertical-align: baseline;
+    font-size: 60px;
+    margin-top: 100px;
+    transition: 0.2s ease;
+}
+
+#btn_facebook i:hover {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    text-shadow: 2px 2px 2px rgb(204, 219, 232);
+}
