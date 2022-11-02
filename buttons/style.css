@@ -199,3 +199,25 @@
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     text-shadow: 2px 2px 2px rgb(204, 219, 232);
 }
+
+#btn_samsung {
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    background-color: #000000;
+    border-radius: 100px;
+    padding: 14px 50px 13px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing:2px;
+    transition: 0.2s ease;
+}
+
+#btn_samsung:hover{
+    background-color: #06167d;
+    scale: 1.1;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
