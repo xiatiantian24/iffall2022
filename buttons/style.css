@@ -1,0 +1,116 @@
+#btn_ibm {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    padding: 1em 5em 1em 1em;
+    background: #0f62fe;
+    border: 2pt solid #0f62fe;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transform: perspective(1px) translateZ(0);
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+#btn_ibm::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+#btn_ibm i {
+    color: #0f62fe;
+    padding-left: 0.5em;
+}
+
+#btn_ibm:hover {
+    color: #0f62fe;
+}
+
+#btn_ibm:hover::before {
+    transform: scaleX(1);
+}
+
+#btn_coca-cola {
+    display: inline-block;
+    margin: auto;
+    margin-top: 60px;
+    padding-top: 40px;
+    width: 100px;
+    height: 60px;
+    font-family: 'Lobster', cursive;
+    color: white;
+    background-color: #F40000;
+    border-radius: 1000px;
+    outline: 10px solid white;
+    outline-offset: -5px;
+    outline-style: dotted;
+    transition: 0.2s ease-in;
+}
+
+#btn_coca-cola:hover {
+    transform: rotate(45deg);
+}
+
+#btn_apple i {
+    color: black;
+    font-size: 90px;
+    margin-top: 80px;
+    transition: 0.2s ease;
+}
+
+#btn_apple i:hover {
+    background: linear-gradient(to bottom, #aebcbf 0%, #6e7774 50%, #0a0e0a 51%, #0a0809 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aebcbf', endColorstr='#0a0809', GradientType=0);
+    /* IE6-9 */
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#btn_nerf {
+    display:inline-block;
+    margin-top: 100px;
+    color: #fe5000;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .9s;
+}
+
+#btn_nerf:hover {
+    font-style: italic;
+    text-decoration: line-through 10px white;
+}
+
+#btn_harley {
+    display:inline-block;
+    margin-top: 100px;
+    color: #fa6600;
+    padding: 0.5em 1em;
+    background-color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+}
+
+#btn_harley:hover {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+}
+
