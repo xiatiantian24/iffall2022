@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+nav {
+    width: 100%;
+    padding: .4em 2em;
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+a {
+    display: inline-block;
+    padding: .2em .4em;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    transition: all 0.2s;
+}
+
+.history:hover {
+    color: #F5834F;
+}
+
+.names-symbols:hover {
+    color: #39A5EC;
+}
+
+.math-science:hover {
+    color: #A6D48C;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+}
+
+#hero p,
+#hero a {
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#hero .text-wrap {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%) ;
+    top: 50vh;
+    background-color: white;
+    border-top: solid 1px rgb(66, 66, 66);
+    padding: 50px 0;
+}
+
+h1 {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 420px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+}
+
+#main {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
