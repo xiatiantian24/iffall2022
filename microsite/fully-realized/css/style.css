@@ -47,9 +47,17 @@ a {
     font-weight: 500;
 }
 
-.navbar {
-    position: fixed;
+.hamburger {
+    position: sticky;
     top: 50%;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 100;
+}
+
+.navbar {
+    /* position: fixed;
+    top: 50%; */
     transform: translateY(-50%);
     z-index: 100;
 }
@@ -394,12 +402,15 @@ h4 {
 
     .show {
         display: block;
-        right: 0;
         height: 100vh;
         padding-top: 100px;
         padding-left: 48px;
         padding-right: 48px;
         background-color: rgba(255, 255, 255, 0.9);
+        width: 50%;
+        position: fixed;
+        margin-left: 45%;
+        top: 50vh;
     }
 
     .show a {
