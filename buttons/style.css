@@ -74,9 +74,8 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aebcbf', endColorstr='#0a0809', GradientType=0);
     /* IE6-9 */
 
-    background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 #btn_nerf {
@@ -206,18 +205,383 @@
     margin-top: 100px;
     text-transform: uppercase;
     text-decoration: none;
-    color:white;
+    color: white;
     background-color: #000000;
     border-radius: 100px;
     padding: 14px 50px 13px;
     font-size: 20px;
     font-weight: 600;
-    letter-spacing:2px;
+    letter-spacing: 2px;
     transition: 0.2s ease;
 }
 
-#btn_samsung:hover{
+#btn_samsung:hover {
     background-color: #06167d;
     scale: 1.1;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#btn_lyft {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 48px;
+    margin-top: 100px;
+    color: #EA0C8D;
+    transform: perspective(1px) translateZ(0);
+
+}
+
+#btn_lyft::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    background-color: #EA0C8D;
+    ;
+    height: 2px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+#btn_lyft:hover::before {
+    left: 0;
+    right: 0;
+}
+
+#btn_tesla {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    margin-top: 100px;
+    color: #303030;
+    padding: 0.5em 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: none;
+    letter-spacing: 3mm;
+    transition: all 0.2s ease-out;
+}
+
+#btn_tesla:hover {
+    color: rgb(194, 0, 0);
+    text-shadow: 6px 6px 10px rgba(150, 150, 150, 0.49);
+}
+
+#btn_colorrun {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-stretch: condensed;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 0.5em 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: none;
+    background: #FFA6F9;
+    background: radial-gradient(circle farthest-corner at center center, #FFA6F9 0%, #FF3B90 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    letter-spacing: -0.5mm;
+}
+
+#btn_colorrun i {
+    transition: all 0.4s ease-out;
+
+}
+
+#btn_colorrun:hover i {
+    scale: 8;
+    background: #FFA6F9;
+    background: radial-gradient(circle farthest-corner at center center, #FFA6F9 0%, #FF3B90 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#btn_cn {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 0.5em 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 1mm;
+    text-decoration: none;
+    transition: all 0.4s ease-out;
+}
+
+#btn_cn #c {
+    color: white;
+    background-color: #000000;
+    display: inline-flex;
+
+    transform: translateY(-50%);
+}
+
+#btn_cn #n {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    display: inline-flex;
+    margin-right: 5px;
+}
+
+#btn_cn i {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    display: inline-flex;
+    transform: translateY(-50%);
+}
+
+#btn_cn:hover #c {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+#btn_cn:hover #n {
+    color: white;
+    background-color: #000000;
+}
+
+#btn_nbc {
+    margin-top: 60px;
+    padding: 0.5em 1em;
+}
+
+#btn_nbc img {
+    width: 100px;
+}
+
+#btn_nbc {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+#btn_nbc::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(38, 38, 38);
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+#btn_nbc:hover::before {
+    transform: scaleY(1);
+}
+
+#btn_fitbit {
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+    font-stretch: ultra-expanded;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: rgb(17, 115, 123);
+    border-radius: 100px;
+    padding: 5px 50px;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    clip-path: inset(0 0 0 90px);
+    transition: all 0.2s ease-out;
+}
+
+#btn_fitbit i {
+    margin: 0 10px;
+}
+
+#btn_fitbit:hover {
+    clip-path: inset(0 90px 0 0);
+}
+
+#btn_nike {
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+    font-stretch: ultra-expanded;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #000000;
+    border-radius: 100px;
+    padding: 5px 50px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    transition: 0.2s ease;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+@keyframes btn_nike {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+
+#btn_nike::before {
+    content: '';
+    position: absolute;
+    border: #000000 solid 6px;
+    border-radius: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+#btn_nike:hover::before {
+    -webkit-animation-name: btn_nike;
+    animation-name: btn_nike;
+}
+
+#btn_explodingkittens {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    position: relative;
+    font-stretch: extra-condensed;
+    margin-top: 100px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 0.2s ease-out;
+}
+
+#btn_explodingkittens .fa-cat {
+    margin-left: 5px;
+}
+
+#btn_explodingkittens .fa-bomb {
+    margin-left: 5px;
+    display: none;
+}
+
+#btn_explodingkittens:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#btn_explodingkittens:hover .fa-cat {
+    display: none;
+}
+
+#btn_explodingkittens:hover .fa-bomb {
+    display: inline;
+}
+
+#btn_moo {
+    color: #107c5d;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 300;
+    transition: all 0.3s ease-out;
+}
+
+#btn_moo i {
+    margin-right: 10px;
+}
+
+#btn_moo:hover {
+    color: #06563f;
+    transform: translateX(50px);
+    clip-path: inset(0 100px 0 0);
+}
+
+#btn_garden {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #006B36;
+    background-color: #D9E9E1;
+    padding: 90px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transition: 0.2s ease;
+}
+
+#btn_garden:hover {
+    box-shadow: 0px 5px 30px rgb(119 1 86 / 15%);
+    background-color: white;
+}
+
+#btn_instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    border-radius: 1000px;
+    font-size: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition-property: color;
+    margin-top: 70px;
+
+}
+
+#btn_instagram i {
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#btn_instagram::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    border-radius: 100%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+#btn_instagram i:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#btn_instagram:hover::before {
+    transform: scale(2);
 }
